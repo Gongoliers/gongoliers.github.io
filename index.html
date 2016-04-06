@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>FRC 5112 Programming and Controls Department</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link charset="utf-8" href="style.css" media="screen" rel="stylesheet" title="no title">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="clock.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="header-img"></div>
+  <div class="header-text">
+    <h1>FRC Team 5112 Programming and Controls Department</h1>
+  </div>
+  <div class="header-button">
+    <a class="ghost" href="#about">
+        ABOUT THE DEPARTMENT
+      </a>
+  </div>
+  <section class="container-fluid" id="about">
+    <div class="row">
+      <div class="col-md-3" id="java-class">
+        <h2 class="text-center">JAVA CLASS</h2>
+      </div>
+      <div class="col-md-3">
+        <h2 class="text-center">GITHUB</h2>
+      </div>
+      <div class="col-md-3">
+        <h2 class="text-center">GUIDES</h2>
+      </div>
+      <div class="col-md-3">
+        <h2 class="text-center">THE GONGOLIERS</h2>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid" id="footer">
+    <div class="container">
+      <div id="copyright">
+        <p>
+          Copyright © 2016 The Gongoliers. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    (function(d, w) {
+      var x = d.getElementsByTagName('SCRIPT')[0];
+      var f = function() {
+        var s = d.createElement('SCRIPT');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = "//np.lexity.com/embed/YW/edc326824ef377503a9f33f723e4e811?id=b305e46cc371";
+        x.parentNode.insertBefore(s, x);
+      };
+      w.attachEvent ? w.attachEvent('onload', f) : w.addEventListener('load', f, false);
+    }(document, window));
+  </script>
+</body>
+
+</html>
